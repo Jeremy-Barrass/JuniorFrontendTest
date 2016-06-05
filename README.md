@@ -1,3 +1,15 @@
+# My Solution
+
+## The following is my solution to the Test posed at the end of this document.
+
+### Job Stories
+
+* When the page loads, I want to see a text field with a button, so that I know I can submit search criteria.
+
+* When I click the submit button, I want the page to display the repositories of the username I submitted.
+
+* When a username does not exist, I want the page to display an error message, so that I know I need to try a different name.
+
 # JuniorFrontendTest
 
 ## GOALS
