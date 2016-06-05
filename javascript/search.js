@@ -19,6 +19,7 @@ function getResponse(error, response) {
 	} else {
 		response = JSON.parse(response);
 		document.querySelector("#results").classList.remove("notFound");
-		document.querySelector("#results").textContent = response.repos_url;
+		document.querySelector("#avatar").setAttribute("src", response.avatar_url);
+		document.querySelector("#username").textContent = response.login;
 	}
 };
