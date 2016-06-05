@@ -5,14 +5,22 @@
     <title>Github User Search</title>
     <script type="text/javascript" src="../javascript/userSearch.js"></script>
     <script type="text/javascript" src="../javascript/search.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"></link>
 </head>
 <body>
 
-<h1>Github User Search</h1>
+<section id="searchArea">
+	<h1>Github User Search</h1>
 
-<form id="search">
-  <input type="text", id="user", placeholder="username">
-  <input type="submit", id="submit", value="Submit">
-</form>
+	<form id="search">
+	  <input type="text", id="user", placeholder="username">
+	  <input type="submit", id="submit", value="Search">
+	</form>
+</section>
+<br>
+<br>
+<div id="results">
+	<p id="msg"></p>
+</div>
 </body>
 </html>

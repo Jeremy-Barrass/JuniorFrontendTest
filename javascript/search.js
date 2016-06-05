@@ -1,11 +1,24 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-	search = new UserSearch();
+	var search = new UserSearch();
+	var response;
 
 	document.querySelector("#submit").addEventListener("click", function(event){
 		event.preventDefault();
 		search.setCriteria(document.querySelector("#user").value);
 		var url = 'https://api.github.com/users/' + search.user;
-		search.go(url);
+		search.go(url, getResponse);
 	});
 });
+
+function getResponse(error, response) {
+	if (error) {
+		console.error('Search error!', error)
+		document.querySelector("#results").classList.add("notFound");
+		document.querySelector("#msg").textContent = "Does not exist."
+	} else {
+		response = JSON.parse(response);
+		document.querySelector("#results").classList.remove("notFound");
+		document.querySelector("#results").textContent = response.repos_url;
+	}
+};

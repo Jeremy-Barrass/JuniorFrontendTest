@@ -25,7 +25,7 @@ describe('userSearch',function(){
 					reqSent(this.responseText);
 				}
 			};
-			search.go(url);
+			search.go(url, function(){});
 			expect(reqSent).not.toHaveBeenCalled();
 			jasmine.Ajax.requests.mostRecent().respondWith({
 				"status": 200,

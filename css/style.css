@@ -1,0 +1,16 @@
+.notFound {
+	height: 50px;
+	width: 100%;
+	vertical-align: center;
+	background-color: red;
+	border: solid;
+	border-color: #aa3333;
+	border-width: 5px;
+}
+
+#msg {
+	font: bold;
+	font-color: #aa3333;
+	font-family: arial, tahoma, sans-serif;
+	padding-left: 10px;
+}
