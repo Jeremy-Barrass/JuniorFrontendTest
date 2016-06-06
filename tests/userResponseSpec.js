@@ -1,8 +1,8 @@
-describe('response', function(){
+describe('userResponse', function(){
 	var rep, err, resp;
 
 	beforeEach(function(){
-		rep = new Response;
+		rep = new UserResponse();
 		console = {error: function(){}};
 		spyOn(console, 'error');
 		JSON = {parse: function(){}};

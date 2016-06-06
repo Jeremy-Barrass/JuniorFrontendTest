@@ -22,7 +22,11 @@
 	padding-right: 5px;
 }
 
+#results {}
 
+#repos {
+	clear:left;
+}
 
 .invisible {
 	visibility: hidden;
