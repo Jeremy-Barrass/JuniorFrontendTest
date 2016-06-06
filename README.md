@@ -14,6 +14,10 @@
 
 Unit tests were run with Jasmine standalone, e2e testing was done manually in a web browser (Google Chrome: Chromium v 50).
 
+### To Run the application
+
+Clone the repo (from mine or your own fork), cd into the folder, start a server in there with your preferred method, point your web brower address bar at your ServerAddress/html/index.html, play with it.
+
 ### Final Thoughts
 
 I have completed these job stories to the best of my ability.  I have learned a lot during my work for this test, particularly about how to write Javascript without using libraries, which I had little experience of before.  I now understand callbacks much better and feel more proficient with CSS, which I have not had much opportunity to work with in many of the exercises on the course.  With this recently gained experience, I will build on it rapidly in the right environment and quickly make myself to an employer.
