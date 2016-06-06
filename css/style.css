@@ -24,6 +24,10 @@
 
 #results {}
 
+.info {
+	float: left;
+}
+
 #repos {
 	clear:left;
 }
