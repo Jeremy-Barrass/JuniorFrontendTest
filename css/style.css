@@ -25,7 +25,14 @@
 #results {}
 
 .info {
-	float: left;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#title {float: left;}
+
+.repo {
+	clear: left;
 }
 
 #repos {
