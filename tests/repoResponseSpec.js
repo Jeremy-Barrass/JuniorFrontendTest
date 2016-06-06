@@ -22,7 +22,7 @@ describe('repoResponse', function(){
 		});
 
 		it('passes an error to the console for logging', function(){
-			expect(console.error).toHaveBeenCalledWith('Search error!', err);
+			expect(console.error).toHaveBeenCalledWith('Search error!  Repos ', err);
 		});
 	});
 });

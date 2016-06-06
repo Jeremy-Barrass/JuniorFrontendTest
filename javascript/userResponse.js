@@ -5,11 +5,11 @@ function UserResponse(){
 
 UserResponse.prototype.getResponse = function(error, response){
 	if (error) {
-		console.error('Search error!', error);
+		console.error('Search error!  User ', error);
 		onError(error);
 	} else {
 		response = JSON.parse(response);
-		onSuccess(response);
+		onSuccessUser(response);
 	}	
 };
 
@@ -26,7 +26,7 @@ function onError(error){
 	document.querySelector("#msg").textContent = "Does not exist. " + error;
 };
 
-function onSuccess(response){
+function onSuccessUser(response){
 	suc = document.querySelectorAll(".success");
 	for(x = 0; x < suc.length; x++) {
 		suc[x].classList.remove("invisible");
@@ -39,6 +39,6 @@ function onSuccess(response){
 	document.querySelector("#avatar").setAttribute("src", response.avatar_url);
 	document.querySelector("#username").textContent = "@" + response.login;
 	document.querySelector("#name").textContent = "name: " + response.name;
-	document.querySelector("#bio").textContent = response.bio;
+	document.querySelector("#bio").textContent = "Bio: " + response.bio;
 	document.querySelector("#repos").textContent = "Repositories";
 };

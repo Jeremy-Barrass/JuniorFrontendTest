@@ -10,6 +10,8 @@
 
 * When a username does not exist, I want the page to display an error message, so that I know I need to try a different name.
 
+I have completed these job stories to the best of my ability.  I have learned a lot during about how to write Javascript without using libraries, which I had little experience of before.  I now understand callbacks much better and 
+
 # JuniorFrontendTest
 
 ## GOALS
